@@ -10,7 +10,34 @@
 
     <article>
         <h3>ProértyBinding</h3>
-        <img src="{{ urlImagem }}">
-        <img [src]="urlImagem">
+        <img src="{{ urlImagems }}">
+        <img [src]="urlImagems">
     </article>
+
+    <article>
+        <h3>Class e Style Binding</h3>        
+        <div>
+            Selecione uma classe:
+             <select #classe (change)="0">
+                 <option value="alert-success">Sucesso</option>
+                 <option value="alert-info">Info</option>
+                 <option value="alert-warning">Alerta</option>
+                 <option value="alert-danger">Erro</option>
+             </select>
+        </div>
+        <br><br>
+
+        <div class="alert {{ classe.value }}">
+            Texto colorido conforme valor da combobox.
+        </div>
+
+        <div class="alert alert-success" [class.alert-sucess] = "classe.value == 'alert-success'">Sucesso</div>
+        <div class="alert alert-info" [class.alert-info] = "classe.value == 'alert-info'">Info</div>
+        <div class="alert alert-warning" [class.alert-warning] = "classe.value == 'alert-warning'">Alerta</div>
+        <div class="alert alert-danger" [class.alert-danger] = "classe.value == 'alert-danger'">Erro</div> 
+
+        <div class="alert alert-danger" [style.display]="classe.value =='alert-danger' ? 'block' : 'none' ">Esse texto somente aparexe emcaso de erro</div> 
+
+    </article>
+          
 </section>
