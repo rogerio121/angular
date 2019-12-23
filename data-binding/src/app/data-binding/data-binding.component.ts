@@ -9,8 +9,11 @@ export class DataBindingComponent implements OnInit {
 
   url : string = 'http://loiane.traine';
   cursoAngular : boolean =  true; 
-  urlImagem : string = 'http://lorempixel.com/400/200'
-  
+  urlImagem : string = 'http://lorempixel.com/400/200';
+  valorAtual : string = '';
+  valorSalvo : string;
+  isMouseOuver : boolean = false;
+
   getValor(){
     return 1;
   }
@@ -19,6 +22,21 @@ export class DataBindingComponent implements OnInit {
     return true;
   }
 
+  botaoClicado(){
+    alert('Obrigado porter me clicado!');
+  }
+
+  onKeyUp(evento : KeyboardEvent){
+    this.valorAtual = (<HTMLInputElement>evento.target).value;
+  }
+
+  salvarValor(valor){
+    this.valorSalvo =valor;
+  }
+
+  onMouseOuverOut(){
+    this.isMouseOuver = !this.isMouseOuver;
+  }
   constructor() { }
 
   ngOnInit() {
