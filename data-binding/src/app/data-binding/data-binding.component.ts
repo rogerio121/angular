@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-data-binding',
   templateUrl: './data-binding.component.html',
   styleUrls: ['./data-binding.component.css']
 })
+
 export class DataBindingComponent implements OnInit {
 
   url : string = 'http://loiane.traine';
@@ -13,6 +15,11 @@ export class DataBindingComponent implements OnInit {
   valorAtual : string = '';
   valorSalvo : string;
   isMouseOuver : boolean = false;
+  nome : string = 'abc';
+  pessoa = {
+    nome : 'Rogério',
+    idade: 23
+  }
 
   getValor(){
     return 1;

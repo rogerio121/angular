@@ -64,3 +64,32 @@
         [class.highlight]="isMouseOuver">Passe o mouse sobre mim</span>
     </article>
 </section>
+
+<section class="two-way-data-binding">
+    <article>
+        <h3>Two-way data binding</h3>
+        <div>
+            <!-- Tres formas de se fazer o two-binding inicio-->
+            <input type="text"
+                [value]="nome"
+                (input)="nome = $event.target.value"
+            />
+
+            <input type="text"
+                [ngModel]="nome"
+                (ngModelChange)="nome = $event"
+            />
+
+            <input type="text" [(ngModel)]="nome"/>
+            <!-- Tres formas de se fazer o two-binding fim-->
+
+            <p>Você digitou o nome: {{ nome }}</p>
+        </div>
+
+        <div>
+            <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade</p>
+            <input type="text" [(ngModel)] = "pessoa.nome" >
+            <input type="text" [(ngModel)] = "pessoa.idade" >
+        </div>
+    </article>
+</section>
