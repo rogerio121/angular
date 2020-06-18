@@ -28,9 +28,19 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/materialize-angular/styles/materialize-angular.scss",
+              "node_modules/materialize-css/dist/css/materialize.css"
+
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/materialize-css/dist/js/materialize.js",
+              "node_modules/hammerjs/hammer.js"
+              
+            ]
           },
           "configurations": {
             "production": {
@@ -123,6 +133,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-cli-libs-externas"
+    }
+  },
+  "defaultProject": "angular-cli-libs-externas",
+  "cli": {
+    "analytics": "34fe3112-d881-401f-9476-8893e7385ad5"
+  }
 }
