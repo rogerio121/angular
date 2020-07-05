@@ -1,0 +1,15 @@
+<h1 class="azul" (click)="onClick()"
+[ngClass]="{'blue': blue,
+    'red' : !blue}">
+    Texto
+</h1>
+
+<style>
+    .blue{
+        color: blue;
+    }
+
+    .red{
+        color: red;
+    }
+</style>
