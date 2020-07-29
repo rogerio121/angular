@@ -7,6 +7,8 @@ import { DiretivasNgswitchComponent } from './diretivas-ngswitch/diretivas-ngswi
 import { DiretivasNgForComponent } from './diretivas-ng-for/diretivas-ng-for.component';
 import { DiretivasNgClassComponent } from './diretivas-ng-class/diretivas-ng-class.component';
 import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { DiretivaNgstyleComponent } from './diretiva-ngstyle/diretiva-ngstyle.co
     DiretivasNgswitchComponent,
     DiretivasNgForComponent,
     DiretivasNgClassComponent,
-    DiretivaNgstyleComponent
+    DiretivaNgstyleComponent,
+    FundoAmareloDirective,
+    DiretivasCustomizadasComponent
   ],
   imports: [
     BrowserModule

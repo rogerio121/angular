@@ -1,13 +1,1 @@
 <h1>Ng Style</h1>
-<button 
-[ngStyle]="{
-    'background-color': (ativo ? 'blue' : 'gray'),
-    'color': (ativo ? 'white' : 'black'),
-    'fontWeight': (ativo ? 'bold' : 'normal'),
-    'fontSize': tamanhoFonte + 'px'
-}"
-(click)="mudarAtivo()">
-    Mudar atributo 'ativo'
-</button>
-<br>
-<input type="text" [(ngModel)]="tamanhoFonte">
