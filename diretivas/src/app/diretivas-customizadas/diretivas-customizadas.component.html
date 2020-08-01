@@ -7,3 +7,12 @@
 <p [highlight]="'blue'" [defaultColor]="'initial'"> 
     Passa o mouse aqui (cores customizadas)
 </p>
+
+
+<div *ngIf="mostrar">
+    Apareceu
+</div>
+<div *ngElse="mostrar">
+    Sumiu
+</div>
+<button (click)="onMostrarOuEsconder()">Mostrar ou esconder "Aqui"</button>
