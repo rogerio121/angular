@@ -2,7 +2,7 @@
     <div class="nav-wrapper">
         <a routerLink="" class="brand-logo">Estudo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li routerLinkActive="active"><a routerLink="/cursos">Cursos</a></li>
+            <li routerLinkActive="active"><a routerLink="/cursos" [queryParams]={pagina:1}>Cursos</a></li>
             <li routerLinkActive="active"><a routerLink="/curso/12">Curso com id</a></li>
             <li routerLinkActive="active"><a routerLink="/login" href="badges.html">Login</a></li>
             
