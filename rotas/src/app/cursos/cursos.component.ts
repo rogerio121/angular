@@ -11,8 +11,8 @@ import { CursosService } from './cursos.service';
 export class CursosComponent implements OnInit {
 
   cursos: any = [];
-  pagina: number;
-  inscricao: Subscription;
+  pagina: number = 0;
+  inscricao: Subscription = new Subscription;
 
   constructor(
     private cursoService : CursosService,
